@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "for((i=0;i<8;i++))"
-for((i=0;i<8;i++))
+echo "for((i=0;i<3;i++))"
+for((i=0;i<3;i++))
 do
 	echo "i = $i"
 done
@@ -18,8 +18,19 @@ do
 	echo "i=$i"
 done
 #seq 用于产生0-10几个连续的自然数
-echo "for i in $(seq 0 10)"
-for i in $(seq 0 10)
+echo "for i in $(seq 0 3)"
+for i in $(seq 0 3)
 do
 	echo "i=$i"
+done
+
+echo "for i in {1..3}"
+for i in {1..3}
+do
+	echo "i=$i"
+done
+
+for i in $*;
+do
+	echo $i is input chart\!;
 done
