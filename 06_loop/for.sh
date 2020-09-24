@@ -34,3 +34,9 @@ for i in $*;
 do
 	echo $i is input chart\!;
 done
+
+echo "for i in `ls`"
+for i in `ls`;
+do
+	echo $i;
+done
